@@ -1,0 +1,93 @@
+{"team":[
+		{
+			"category"	:	"University",
+			"name"		:	"SWAT",
+			"school" 	:	"Southwestern Adventist University",
+			"coach"		: 	"Coach Hutchinson"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"AcroNics",
+			"school" 	:	"Mount Vernon Academy",
+			"coach"		: 	"Coach Irwin"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"Knights",
+			"school" 	:	"Sandia View Academy",
+			"coach"		: 	"Coach Clapp"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"Acroflyers",
+			"school" 	:	"Georgia-Cumberland Academy",
+			"coach"		: 	"Coach Boggess"
+		},
+		{
+			"category"	:	"Univeristy",
+			"name"		:	"Gym-Masters",
+			"school" 	:	"Southern Adventist University",
+			"coach"		: 	"Coach Schwarz"
+		},
+		{
+			"category"	:	"Univeristy",
+			"name"		:	"Acro-Airs",
+			"school" 	:	"Washington Adventist University",
+			"coach"		: 	"Coach Johnson"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"CTA Acrobatics",
+			"school" 	:	"Chisholm Trail Academy",
+			"coach"		: 	"Coach Hutchinson"
+		},
+		{
+			"category"	:	"Univeristy",
+			"name"		:	"Gymnics",
+			"school" 	:	"Andrews University",
+			"coach"		: 	"Coach Paddock"
+		},
+		{
+			"category"	:	"Univeristy",
+			"name"		:	"AcroEagles",
+			"school" 	:	"Unviersidad Adventista de los Antillas",
+			"coach"		: 	"Coach Vargas"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"MPA Acro",
+			"school" 	:	"Mount Pisgah Academy",
+			"coach"		: 	"Coach Seals"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"WINGS",
+			"school" 	:	"Thunderbird Adventist Academy",
+			"coach"		: 	"Coach Thimson"
+		},
+		{
+			"category"	:	"Universary",
+			"name"		:	"Gymnaires",
+			"school" 	:	"Union College",
+			"coach"		: 	"Coach Perry"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"Acrosquad",
+			"school" 	:	"Spencerville Academy",
+			"coach"		: 	"Coach Silie"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"Petersons Gym",
+			"school" 	:	"Petersons Gym",
+			"coach"		: 	"Coach Peterson"
+		},
+		{
+			"category"	:	"Academy",
+			"name"		:	"Acros",
+			"school" 	:	"Madison Academy",
+			"coach"		: 	"Coach Ley"
+		}
+	]
+}

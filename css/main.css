@@ -1,0 +1,31 @@
+* {
+	font-family: "Gill Sans", "Helvetica Neau", serif;
+	font-weight: lighter;
+}
+
+
+div [data-role="listview"] li {
+	padding:0;
+	margin:0;
+}
+div [data-role="collapsible"] h3 {
+	margin: 0;
+}
+
+.ui-collapsible-heading-toggle {
+	padding: 20px;
+}
+
+header {
+	width: 100%;
+}
+header {margin:0;}
+.gymnicslogo img {
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.acro img{ width:100%; padding-top: 10px;}
+
+h1 {text-align: center;}

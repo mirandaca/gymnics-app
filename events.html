@@ -2,88 +2,178 @@
 <html>
 <head>
 	<title>Andrews University Gymnics</title>
-	
+	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/main.css"/>
+		
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	
+	<script src="scripts/filter.js"></script>
 </head>
 <body>
 
 <!-- acrofest page-->
 	
 	<div id="acrofest" data-role="page" data-theme="b">
-		<div data-role="header" data-id="nav" data-position="fixed">
+		<div data-role="header" data-position="fixed">
 			<h1>Gymnics</h1>
-			<a href="index.html" data-icon="home">Home</a>
+			<a href="#popupMenu" data-rel="popup" data-transition="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Menu</a>
+				<div data-role="popup" id="popupMenu" data-theme="b">
+			        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+			        </ul>
+				</div>
+			<a data-rel="back" data-icon="back" data-role="button">Back</a>
+		</div><!--header-->
+		
+		<div data-role="content">
+			<header class="acro">
+				<img src="images/acrofest.png" alt="acrofest2013">
+			</header><!--header-->
+			<p class="acrointro">
+			Acrofest this year will feature a few new things 
+			that will challenge us to be bold, 
+			to work together as one, 
+			and to dazzle the minds of young people 
+			who have never seen what we do best.
+			<br><br>
+			My prayer this year is that Acrofest will be a spiritual revival 
+			where you can find a deeper love and relationship with Jesus Christ. 
+			That revival will begin with you.
+			<br><br>
+			Working together with our schools and universities, 
+			our goal is that you will see the awesome power of God at work in your life 
+			as we learn why we are here and how God has called us to use our talents.
+			</p>
+		
+		<div data-role="content">
+				<section id="acroteams">
+					<!-- outputs the JSON data -->
+				</section><!--acroteams-->
+		</div><!--content-->
+		
+		<div data-role="footer" data-position="fixed" style="overflow:hidden;">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#acrofest" class="ui-btn-active ui-state-persist">Acrofest</a></li>
 					<li><a href="#tours">Tours</a></li>
 					<li><a href="#homeshow">Home Show</a></li>
 				</ul>
-			</div>
-		</div>
+			</div> <!--navbar-->
+		</div><!-- footer -->
 		
-		<div data-role="content">
-
-		</div>
-	</div>
+	</div><!--acrofest-->
 	
 <!-- tours page-->	
 	
 	<div id="tours" data-role="page" data-theme="b">
-		<div data-role="header" data-id="nav" data-position="fixed">
+		<div data-role="header" data-position="fixed">
 			<h1>Gymnics</h1>
-			<a href="index.html" data-icon="home">Home</a>
+			<a href="#popupMenu" data-rel="popup" data-transition="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Menu</a>
+				<div data-role="popup" id="popupMenu" data-theme="b">
+			        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+			        </ul>
+				</div>
+			<a data-rel="back" data-icon="back" data-role="button">Back</a>
+		</div><!--header-->
+		
+		<div data-role="content">
+			<section id="listing">
+				<!-- outputs the JSON data -->
+			</section>
+		</div> <!--content-->
+		
+		<div data-role="footer" data-position="fixed" style="overflow:hidden;">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#acrofest">Acrofest</a></li>
 					<li><a href="#tours" class="ui-btn-active ui-state-persist">Tours</a></li>
 					<li><a href="#homeshow">Home Show</a></li>
 				</ul>
-			</div>
-		</div>
+			</div> <!--navbar-->
+		</div><!-- footer -->
 		
-		<div data-role="content">
-			<ul data-role="listview" data-filter="true">
-				<li data-role="list-divider">January</li>
-				<li><a href="pacers.html"><h3>Pacers Halftime</h3><p>January 14, 2014</p></a></li>
-				<li data-role="list-divider">February</li>
-				<li><a href="oakland.html"><h3>Oakland Halftime</h3><p>February 6, 2014</p></a></li>
-				<li><a href="Metro.html"><h3>Metro</h3><p>February 7, 2014</p></a></li>
-				<li><a href="kingsway.html"><h3>Kingsway College</h3><p>February 8, 2014</p></a></li>
-				<li><a href="indiana.html"><h3>Indiana Academy</h3><p>February 22, 2014</p></a></li>
-				<li data-role="list-divider">March</li>
-				<li><a href="blossomland.html"><h3>Blossomland</h3><p>March 28, 2014</p></a></li>
-				<li><a href="masoncity.html"><h3>Mason City Iowa</h3><p>March 30, 2014</p></a></li>
-				<li data-role="list-divider">April</li>
-				<li><a href="homeshow.html"><h3>Homeshow</h3><p>April 11-13, 2014</p></a></li>		
-			</ul>
-		</div>
-		
-	</div>
+	</div> <!--tours-->
 	
 <!-- homeshow page-->
 	
 	<div id="homeshow" data-role="page" data-theme="b">
-		<div data-role="header" data-id="nav" data-position="fixed">
+		<div data-role="header" data-position="fixed">
 			<h1>Gymnics</h1>
-			<a href="index.html" data-icon="home">Home</a>
+			<a href="#popupMenu" data-rel="popup" data-transition="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Menu</a>
+				<div data-role="popup" id="popupMenu" data-theme="b">
+			        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+			        </ul>
+				</div>
+			<a data-rel="back" data-icon="back" data-role="button">Back</a>
+		</div><!--header-->
+		
+		<div data-role="content">
+			
+		</div><!--content-->
+		
+		<div data-role="footer" data-position="fixed" style="overflow:hidden;">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#acrofest">Acrofest</a></li>
 					<li><a href="#tours">Tours</a></li>
 					<li><a href="#homeshow" class="ui-btn-active ui-state-persist">Home Show</a></li>
 				</ul>
-			</div>
-		</div>
-		
-		<div data-role="content">
-			
-		</div>
-	</div>
+			</div> <!--navbar-->
+		</div><!-- /footer -->
+	</div> <!--homeshow-->
+	
+<!--event scripts-->
+	<script>
+		$.getJSON('scripts/eventListing.json', function(data){
+			var output="<ul id='events' data-role='listview' data-filter='true'>";
+			for (var i in data.event) {
+				output+="<li class='"+data.event[i].category+"' style='padding-top: 0px; padding-bottom: 0px;'>";
+				output+="<div data-role='collapsible' data-inset='true' data-iconpos='right'>";
+				output+="<h3>" + data.event[i].title + "</h3>";
+				output+="<p>" + data.event[i].location + "</p>";
+				output+="<p>" + data.event[i].time + "</p>";
+				output+="<p>" + data.event[i].date + "</p>";
+				output+="</div>"
+				output+="</li>"
+			}
+			output+="</ul>";
+			document.getElementById("listing").innerHTML=output;
+		})
+		</script>
+<!--end of event scripts-->
+<!--teams scripts-->
+		<script>
+			$.getJSON('scripts/teamListing.json', function(data){
+				var output="<ul id='teams' data-role='listview' data-filter='true'>";
+				for (var i in data.team) {
+					output+="<li class='"+data.team[i].category+"' style='padding-top: 0px; padding-bottom: 0px;'>";
+					output+="<div>";
+					output+="<h3>" + data.team[i].name + "</h3>";
+					output+="<p>" + data.team[i].school + "</p>";
+					output+="<p>" + data.team[i].coach + "</p>";
+					output+="</div>"
+					output+="</li>"
+				}
+				output+="</ul>";
+				document.getElementById("acroteams").innerHTML=output;
+			})
+			</script>
+<!--end of team scripts-->
 	
 </body>
 </html>

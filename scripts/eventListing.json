@@ -1,0 +1,60 @@
+{"event":[
+		{
+			"category"	:	"haltime basketball",
+			"title" 	:	"Pacers Halftime",
+			"location"	:	"Bankers Life Fieldhouse, Indiana, IN",
+			"time"		:	"7:00pm",
+			"date"		: 	"January 14, 2014"
+		},
+		{
+			"category"	:	"halftime basketball",
+			"title" 	:	"Oakland Halftime",
+			"location"	:	"2200 N Squirrel Rd, Rochester, MI",
+			"time"		:	"7:00pm",
+			"date"		:	"February 6, 2014"
+		},
+		{
+			"category"	:	"college full show",
+			"title" 	:	"Kingsway College",
+			"location"	:	"Oshawa, ON, Canada",
+			"time"		:	"7:00pm",
+			"date"		:	"Ferbuary 8, 2014"
+		},
+		{
+			"category"	:	"full show",
+			"title" 	:	"Blossomland Learning Center",
+			"location"	:	"711 St. Joseph Ave, Berrien Springs, MI",
+			"time"		:	"8:00am",
+			"date"		:	"March 28, 2014"
+		},
+		{
+			"category"	:	"community college full show",
+			"title" 	:	"Mason City Iowa",
+			"location"	:	"500 College Dr, Mason City, IA",
+			"time"		:	"8:00pm",
+			"date"		:	"March 30, 2014"
+		},
+		{
+			"category"	:	"home show morning",
+			"title" 	:	"Home Show",
+			"location"	:	"8520 E Campus Circle Dr, Berrien Springs, MI",
+			"time"		:	"9:00am",
+			"date"		:	"April 11, 2014"
+		},
+		{
+			"category"	:	"home show night",
+			"title" 	:	"Home Show",
+			"location"	:	"8520 E Campus Circle Dr, Berrien Springs, MI",
+			"time"		:	"7:00pm",
+			"date"		:	"April 12, 2014"
+		},
+		{
+			"category"	:	"home show night",
+			"title" 	:	"Home Show",
+			"location"	:	"8520 E Campus Circle Dr, Berrien Springs, MI",
+			"time"		:	"7:00pm",
+			"date"		:	"April 13, 2014"
+		}
+
+	]
+}

@@ -2,73 +2,480 @@
 <html>
 <head>
 	<title>Andrews University Gymnics</title>
-	
+	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/main.css"/>
+		
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 </head>
 <body>
 	<!--coach page-->
 		
 	<div id="coach" data-role="page" data-theme="b">
-		<div data-role="header" data-id="nav" data-position="fixed">
+		<div data-role="header" data-position="fixed">
 			<h1>Gymnics</h1>
-			<a href="index.html" data-icon="home">Home</a>
+			<a href="#popupMenu" data-rel="popup" data-transition="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Menu</a>
+				<div data-role="popup" id="popupMenu" data-theme="b">
+			        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+			        </ul>
+				</div>
+			<a data-rel="back" data-icon="back" data-role="button">Back</a>
+		</div><!--header-->
+		
+		<div data-role="content">
+
+		</div><!--content-->
+		
+		<div data-role="footer" data-position="fixed" style="overflow:hidden;">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#coach" class="ui-btn-active ui-state-persist">Coach</a></li>
 					<li><a href="#leadership">Leadership</a></li>
 					<li><a href="#team">Team</a></li>
 				</ul>
-			</div>
-		</div>
-		
-		<div data-role="content">
-
-		</div>
-	</div>
+			</div><!--navbar-->
+		</div><!-- /footer -->
+	</div><!--coach-->
 	
 <!--leadership page-->
 	
 	<div id="leadership" data-role="page" data-theme="b">
 		<div data-role="header" data-id="nav" data-position="fixed">
 			<h1>Gymnics</h1>
-			<a href="index.html" data-icon="home">Home</a>
+			<a href="#popupMenu" data-rel="popup" data-transition="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Menu</a>
+				<div data-role="popup" id="popupMenu" data-theme="b">
+			        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+			        </ul>
+				</div>
+			<a data-rel="back" data-icon="back" data-role="button">Back</a>
+		</div><!--header-->
+		
+		<div data-role="content">
+			<ul data-role='listview' data-filter='true' data-inset='true'>
+				<li>
+					<img>
+					<h3>Vivianne Perez</h3>
+					<p>Age: 23</p>
+					<p>Height: 160cm tall</p>
+					<p>POB: Arizona</p>
+					<p>Degree: Business Administration</p>
+					<p>On Gymnics: 6yrs</p>
+					<p>Specialty: Lyra, Trio</p>
+					<p>About me: Determined</p>
+				</li>
+				<li>
+					<img>
+					<h3>Cady Sittlinger</h3>
+					<p>Age: 21</p>
+					<p>Height: 170cm tall</p>
+					<p>POB: Oshawa, ON, Canada</p>
+					<p>Degree: Biology, Pre-med</p>
+					<p>On Gymnics: 4yrs</p>
+					<p>Specialty: Silk, Trio</p>
+					<p>About me: Canadian Captain</p>
+				</li>
+				<li>
+					<img>
+					<h3>Rogel A. Perez</h3>
+					<p>Age: 24</p>
+					<p>Height: 183cm tall</p>
+					<p>POB: Puerto Rico</p>
+					<p>Degree: Criminal Justice</p>
+					<p>On Gymnics: 5yrs</p>
+					<p>Specialty: Stunting, Teeter Board</p>
+					<p>About me: Beast!</p>
+				</li>
+				<li>
+					<img>
+					<h3>Adam DeWitt</h3>
+					<p>Age: 21</p>
+					<p>Height: 177cm tall</p>
+					<p>POB: Charlotte, MI</p>
+					<p>Degree: Chiroprator</p>
+					<p>On Gymnics: 3yrs</p>
+					<p>Specialty: Teeter Board, Tumbling</p>
+					<p>About me: Loud!!</p>
+				</li>
+			</ul><!--gymnics leaders-->
+		</div><!--content-->
+		
+		<div data-role="footer" data-position="fixed" style="overflow:hidden;">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#coach">Coach</a></li>
 					<li><a href="#leadership" class="ui-btn-active ui-state-persist">Leadership</a></li>
 					<li><a href="#team">Team</a></li>
 				</ul>
-			</div>
-		</div>
-		
-		<div data-role="content">
-
-		</div>
-	</div>
+			</div><!--navbar-->
+		</div><!-- /footer -->
+	</div><!--leadership-->
 	
 <!--the team page-->
 		
 	<div id="team" data-role="page" data-theme="b">
 		<div data-role="header" data-id="nav" data-position="fixed">
 			<h1>Gymnics</h1>
-			<a href="index.html" data-icon="home">Home</a>
+			<a href="#popupMenu" data-rel="popup" data-transition="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Menu</a>
+				<div data-role="popup" id="popupMenu" data-theme="b">
+			        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+			        </ul>
+				</div>
+			<a data-rel="back" data-icon="back" data-role="button">Back</a>
+		</div><!--header-->
+		
+		<div data-role="content">
+			<ul data-role='listview' data-filter='true' data-inset='true'>
+				<li class="girl female woman">
+					<img>
+					<h3>Alicia Dooks</h3>
+					<p>Age: 19</p>
+					<p>Height: 165cm</p>
+					<p>POB: Toronto,Canada</p>
+					<p>Degree: Accouting</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Group Stunting</p>
+					<p>About me: Canadian</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Darren Fernandez</h3>
+					<p>Age: 22</p>
+					<p>Height: 185.5cm</p>
+					<p>POB: Broax, NYC</p>
+					<p>Degree: Gen-Ed, Fitness Education</p>
+					<p>On Gymnics: 2yrs</p>
+					<p>Specialty: Wall walking, Group Stunting</p>
+					<p>About me: 'Who ever is trying <br> to bring you down,<br> is already below you'</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Sarah Pardy</h3>
+					<p>Age: 22</p>
+					<p>Height: 172.5cm</p>
+					<p>POB: Canada</p>
+					<p>Degree: Architecture</p>
+					<p>On Gymnics: 3yrs</p>
+					<p>Specialty: Paired Silks, Trio</p>
+					<p>About me: Canadian</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Shawn Haankwenda</h3>
+					<p>Age: 19</p>
+					<p>Height: 172.5cm</p>
+					<p>POB: Lusaka,Zambia</p>
+					<p>Degree: International Business</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Tumbling (sorta)</p>
+					<p>About me: supercalifragilisticexpialidocious</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Xiara Mercado</h3>
+					<p>Age: 22</p>
+					<p>Height: 160cm</p>
+					<p>POB: Puerto Rico</p>
+					<p>Degree: Wellness & Fitness/ Nursing</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Acro Yoga, Russian Bar</p>
+					<p>About me: Swagnificent!</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Ryan Atkins</h3>
+					<p>Age: 23</p>
+					<p>Height: 177.5cm</p>
+					<p>POB: Chesapeake, VA</p>
+					<p>Degree: Liberal Arts</p>
+					<p>On Gymnics: 4yrs</p>
+					<p>Specialty: Acro yoga, Handstand Balancing</p>
+					<p>About me: Interesting</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Luz</h3>
+					<p>Age: 19</p>
+					<p>Height: 155cm</p>
+					<p>POB: Reading, PA</p>
+					<p>Degree: Biology, Pre-Med</p>
+					<p>On Gymnics: 2yrs</p>
+					<p>Specialty: Paired Silks, Stunting</p>
+					<p>About me: Bubbly</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Jose Rivera</h3>
+					<p>Age: 25</p>
+					<p>Height: 172.5cm</p>
+					<p>POB: San Diego, CA</p>
+					<p>Degree: General Studies</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Acro yoga</p>
+					<p>About me: Hispanic Superman</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Jackie Sittinger</h3>
+					<p>Age: 20</p>
+					<p>Height: 170cm</p>
+					<p>POB: Oshawa, Canada</p>
+					<p>Degree: Nursing</p>
+					<p>On Gymnics: 2yrs</p>
+					<p>Specialty: Russian Bar</p>
+					<p>About me: Canadian</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Lebron James</h3>
+					<p>Age: 20</p>
+					<p>Height: 188cm</p>
+					<p>POB: Jamaica</p>
+					<p>Degree: Business Administration</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: THE BASE!</p>
+					<p>About me: BIG BLACK MAN!</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Rachel Aka</h3>
+					<p>Age: 19</p>
+					<p>Height: 170cm</p>
+					<p>POB: Toronto, ON, Canada</p>
+					<p>Degree: Photography</p>
+					<p>On Gymnics: 2yrs</p>
+					<p>Specialty: Silks, Tumbling</p>
+					<p>About me: Trilingual</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Cory Young Francois</h3>
+					<p>Age: 22</p>
+					<p>Height: 183cm</p>
+					<p>POB: Brooklyn, NY</p>
+					<p>Degree: BHS & Wellness, PT</p>
+					<p>On Gymnics: 2yrs</p>
+					<p>Specialty: Stunting</p>
+					<p>About me: strong, Adventurous</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Hannah FitzGerald</h3>
+					<p>Age: 19</p>
+					<p>Height: 167.75cm</p>
+					<p>POB: Green Bay, WI</p>
+					<p>Degree: Speech Pathology</p>
+					<p>On Gymnics: 2yrs</p>
+					<p>Specialty: Silks, Pair Stunting</p>
+					<p>About me: I make facial expressions</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Adam Buchholz</h3>
+					<p>Age: 21</p>
+					<p>Height: 183cm</p>
+					<p>POB: Bever Dam, WI</p>
+					<p>Degree: Computer Science</p>
+					<p>On Gymnics: 4yrs</p>
+					<p>Specialty: Base, Stunting</p>
+					<p>About me: SWOLE!</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Ashley Colomb</h3>
+					<p>Age: 20</p>
+					<p>Height: 162.5cm</p>
+					<p>POB: Maryland</p>
+					<p>Degree: Pre-Physical Therapy</p>
+					<p>On Gymnics: 2yrs</p>
+					<p>Specialty: Flying, Stunting</p>
+					<p>About me: Achiever</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Mark Lucas</h3>
+					<p>Age: 21</p>
+					<p>Height: 170cm</p>
+					<p>POB: Tenessee</p>
+					<p>Degree: Electrical Engineering</p>
+					<p>On Gymnics: 3yrs</p>
+					<p>Specialty: Chairs</p>
+					<p>About me: Grumpy</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Elisabeth Schell</h3>
+					<p>Age: 19</p>
+					<p>Height: 165.25cm</p>
+					<p>POB: Kiel, Germany</p>
+					<p>Degree: Pre-Physical Therapy</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Silks</p>
+					<p>About me: I AM the gunshow!!</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Zac Block</h3>
+					<p>Age: 22</p>
+					<p>Height: 177.5cm</p>
+					<p>POB: Hinsdal</p>
+					<p>Degree: General Study</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Tumbler</p>
+					<p>About me: Awesome!</p>
+				</li>
+				<li class="girl female woman">
+					<img>
+					<h3>Natalie Hotz</h3>
+					<p>Age: 18</p>
+					<p>Height: 167.5cm</p>
+					<p>POB: Kettering, OH</p>
+					<p>Degree: Pre-Physical Therapy</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Silks, Group Stunting</p>
+					<p>About me: On the run!</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Christian Miranda</h3>
+					<p>Age: 23</p>
+					<p>Height: 165cm</p>
+					<p>POB: Boston, Ma</p>
+					<p>Degree: Designer</p>
+					<p>On Gymnics: 3yrs</p>
+					<p>Specialty: Mini-tramp</p>
+					<p>About me: psh! Please</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Gunner</h3>
+					<p>Age: 29</p>
+					<p>Height: 183cm</p>
+					<p>POB: Berrien Springs, MI</p>
+					<p>Degree: Medicine</p>
+					<p>On Gymnics: 5yrs</p>
+					<p>Specialty: Fire Poi</p>
+					<p>About me: Unconventional</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Luke Lebo</h3>
+					<p>Age: 20</p>
+					<p>Height: 193cm</p>
+					<p>POB: Reading, PA</p>
+					<p>Degree: Pre-Physical Therapy</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Poi, Wallwalking</p>
+					<p>About me: Tall</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Greg Mussleman</h3>
+					<p>Age: 22</p>
+					<p>Height: 175cm</p>
+					<p>POB: Cheboygan, MI</p>
+					<p>Degree: Biology</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Chairs Master</p>
+					<p>About me: I have a Stellar Wife</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Austin Clements</h3>
+					<p>Age: 18</p>
+					<p>Height: 172.5cm</p>
+					<p>POB: Lansing, MI</p>
+					<p>Degree: General Studies</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Teeter, Mini-tramp</p>
+					<p>About me: Ramdon</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Kadeem Campell</h3>
+					<p>Age: 22</p>
+					<p>Height: 183cm</p>
+					<p>POB: New York</p>
+					<p>Degree: Exercise Science</p>
+					<p>On Gymnics: 5yrs</p>
+					<p>Specialty: Tumble, Mini-tramp</p>
+					<p>About me: Supercalifragilisticexpialidocious</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Elias Moreno</h3>
+					<p>Age: 18</p>
+					<p>Height: 185.5cm</p>
+					<p>POB: Mexico</p>
+					<p>Degree: Bio, Pre-Med</p>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Russian Bar Base</p>
+					<p>About me: Mysterious</p>
+				</li>
+				<li class="boy male man">
+					<img>
+					<h3>Nathan Bolkovic</h3>
+					<p>Age: 20</p>
+					<p>Height: 185.5cm</p>
+					<p>POB: Aurora, ON, Canada</p>
+					<p>Degree: Architecture>
+					<p>On Gymnics: 1yr</p>
+					<p>Specialty: Teeter, Mini-tramp</p>
+					<p>About me: Dare Devil!</p>
+				</li>
+				
+				
+			</u><!--listview-->
+		</div><!--content-->
+		
+		<div data-role="footer" data-position="fixed" style="overflow:hidden;">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#coach">Coach</a></li>
 					<li><a href="#leadership">Leadership</a></li>
 					<li><a href="#team" class="ui-btn-active ui-state-persist">Team</a></li>
 				</ul>
-			</div>
-		</div>
-		
-		<div data-role="content">
-
-		</div>
-	</div>
+			</div><!--navbar-->
+		</div><!-- /footer -->
+	</div><!--team-->
+	
+	<!--meet us scripts-->
+		<script>
+			$.getJSON('scripts/leadership.json', function(data){
+				var output="<ul id='leaders' data-role='listview' data-filter='true'>";
+				for (var i in data.leadership) {
+					output+="<li class='"+data.leadership[i].category+"' style='padding-top: 0px; padding-bottom: 0px;'>";
+					output+="<div data-inset='true'>";
+					output+="<h3>" + data.leadership[i].name + "</h3>";
+					output+="<p>" + data.leadership[i].age + "</p>";
+					output+="<p>" + data.leadership[i].height + "</p>";
+					output+="<p>" + data.leadership[i].POB + "</p>";
+					output+="<p>" + data.leadership[i].degree + "</p>";
+					output+="<p>" + data.leadership[i].years + "</p>";
+					output+="<p>" + data.leadership[i].specialty + "</p>";
+					output+="<p>" + data.leadership[i].about + "</p>";
+					output+="</div>"
+					output+="</li>"
+				}
+				output+="</ul>";
+				document.getElementById("gymnicsleaders").innerHTML=output;
+			})
+			</script>
+	<!--end of meets scripts-->
 		
 	
 </body>
